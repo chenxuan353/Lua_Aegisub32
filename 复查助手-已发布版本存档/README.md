@@ -1,0 +1,51 @@
+# 复查小助手
+原本打算改名的，想想还是这个名字亲切.jpg
+
+复查小助手距离最初开发的第一个测试版本已经一年多了
+
+2021年1月29日是复查小助手正式版一周年的日子。
+
+所以开发~~重写~~了复查小助手年度更新版 V2.0.0！
+
+
+
+## 功能
+
+支持多功能可配置的轴文件检查
+
+1. 智能60FPS修复(视频已打开)
+
+2. 识别可能导致压制乱码的字符(包含检查当前已打开文件名)
+
+3. 识别单行字幕过长(视频已打开)
+
+4. 识别不存在的样式
+
+5. 同样式非注释行重叠以及包含
+
+6. 识别未安装的字体(需要Yutils支持)
+
+7. 闪轴检测及修复(行间隔<300ms-默认,单行<300ms-默认)
+
+8. 检查格式，及格式化(自定义检查规则)
+
+
+
+
+
+
+
+## 运行预览
+
+![image-20210127171208596](C:\Users\11408\AppData\Roaming\Typora\typora-user-images\image-20210127171208596.png)
+
+![image-20210127171358222](C:\Users\11408\AppData\Roaming\Typora\typora-user-images\image-20210127171358222.png)
+
+![image-20210127171005462](C:\Users\11408\AppData\Roaming\Typora\typora-user-images\image-20210127171005462.png)
+
+![image-20210127171016552](C:\Users\11408\AppData\Roaming\Typora\typora-user-images\image-20210127171016552.png)
+
+![image-20210127171027930](C:\Users\11408\AppData\Roaming\Typora\typora-user-images\image-20210127171027930.png)
+
+![image-20210127171111576](C:\Users\11408\AppData\Roaming\Typora\typora-user-images\image-20210127171111576.png)
+
