@@ -28,24 +28,3 @@
 7. 闪轴检测及修复(行间隔<300ms-默认,单行<300ms-默认)
 
 8. 检查格式，及格式化(自定义检查规则)
-
-
-
-
-
-
-
-## 运行预览
-
-![image-20210127171208596](https://i.loli.net/2021/01/27/XvpJRYI3dQqKZPk.png)
-
-![image-20210127171358222](https://i.loli.net/2021/01/27/A1FvPGp79YLhU4f.png)
-
-![image-20210127171005462](C:/Users/11408/AppData/Roaming/Typora/typora-user-images/image-20210127171005462.png)
-
-![image-20210127171016552](C:/Users/11408/AppData/Roaming/Typora/typora-user-images/image-20210127171016552.png)
-
-![image-20210127171027930](C:/Users/11408/AppData/Roaming/Typora/typora-user-images/image-20210127171027930.png)
-
-![image-20210127171111576](https://i.loli.net/2021/01/27/2wJha63tlvgyznd.png)
-
