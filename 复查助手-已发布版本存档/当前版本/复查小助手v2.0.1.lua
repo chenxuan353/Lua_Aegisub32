@@ -22,17 +22,17 @@ Hello ASSman!
 选项菜单内存在部分说明
 或至本项目github地址上包含的说明文档中查看
 字体检测功能依赖“Yutils”，本体依赖“CXkara_函数辅助库”
-链接：https://github.com/chenxuan353/Lua_Aegisub32
+项目仓库：https://github.com/chenxuan353/Lua_Aegisub32
 
 支持多功能可配置的轴文件检查
 1.智能60FPS修复(视频已打开)
 2.识别可能导致压制乱码的字符(包含检查当前已打开文件名)
-3.识别单行字幕过长(视频已打开)
+3.识别单行字幕过长(超出视频边界)
 4.识别不存在的样式
 5.同样式非注释行重叠以及包含
 6.识别未安装的字体(需要Yutils支持)
-7.闪轴检测及修复(行间隔<300ms-默认,单行<300ms-默认)
-8.检查格式，及格式化(自定义检查规则)
+7.闪轴检测及修复(比旧版更好的检测联动轴)
+8.检查格式，及格式化(自定义检查与替换规则，支持分样式设置)
 注：60FPS修复经过测试多次使用对ASS无负面影响
 注：注释、说话人或特效不为空的行配置后可被忽略
 注：本助手的提示等级为level 3 如果不能正常显示信息或者其他异常请检查您的设置
@@ -45,6 +45,9 @@ Hello ASSman!
 
 -- 更新日志
 script_ChangeLog = [[
+v2.0.1正式版
+修正不安装Yutils会报错的问题
+
 v2.0.0正式版
 与之前的版本相比，大幅增强了配置功能。
 并增加了格式化检测与格式化功能
@@ -54,8 +57,19 @@ v2.0.0正式版
 提供的统计功能也能很好的了解
 当前文件的状态
 ]]
-
-local Yutils = require('Yutils')
+-- 无错误导入(参数 库名)，出错返回nil
+function noerrRequire(libname)
+	local res = nil
+	if not pcall(
+		function (reqname)
+			-- 测试加载文件
+			res = require(reqname)
+		end, libname) then
+		res = nil
+	end
+	return res
+end
+local Yutils = noerrRequire('Yutils')
 local re = require('re')
 local lfs = require("lfs")
 local unicode = require("unicode")
